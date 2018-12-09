@@ -14,6 +14,17 @@ url: https://leetcode.com/problems/add-two-numbers/
 > Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 > Output: 7 -> 0 -> 8
 > Explanation: 342 + 465 = 807.
+#### How to use IDEAL & Duke's
+I would first draw out a few examples, drawing nodes and then using my fingers to point to active nodes.  This would help with the 1-4 parts of IDEAL.  
+
+#### Clarifying questions:
+* Is the linked list doubly linked?
+* Will the linked lists be of the same size?
+* Should the answer also be in reverse order?
+#### Probing questions:
+* How should we deal with leading zeros?
+* Should we do calculations in place? To reduce memory usage.
+* How should we handle overflows? Like is there a limit to the number of nodes in the answer?
 
 ### Q542. 01 Matrix
 url: https://leetcode.com/problems/01-matrix/
@@ -42,6 +53,16 @@ url: https://leetcode.com/problems/132-pattern/
 >Output: False
 >
 >Explanation: There is no 132 pattern in the sequence.
+#### How to use IDEAL & Duke's
+In the "Identify the problem" of IDEAL I would wannt to rephrase the question in plain english. So that I know what examples and what steps to take in Duke's approach.
+#### Clarifying questions:
+* I would want to first clearly define what is meant by "i", "j", "k" verses "ai", "aj", "ak"
+* When we say "list" are we talking about a linked list?
+* Is the linked list, singly- or doubly-linked?
+#### Probing questions:
+* What if we're given a sequence that is less than three integers?
+* Would there be a situation of having negative numbers in the list?
+* Why do they explicitly make a point of saying "n will be less than 15,000?
 
 ### Q650. 2 Keys Keyboard
 url: https://leetcode.com/problems/2-keys-keyboard/
