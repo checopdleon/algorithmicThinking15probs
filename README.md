@@ -16,7 +16,6 @@ url: https://leetcode.com/problems/add-two-numbers/
 > Explanation: 342 + 465 = 807.
 #### How to use IDEAL & Duke's
 I would first draw out a few examples, drawing nodes and then using my fingers to point to active nodes.  This would help with the 1-4 parts of IDEAL.  
-
 #### Clarifying questions:
 * Is the linked list doubly linked?
 * Will the linked lists be of the same size?
@@ -33,13 +32,22 @@ url: https://leetcode.com/problems/01-matrix/
 >The distance between two adjacent cells is 1.
 >Example 1: 
 >Input:
->    {{0 0 0},
->     {0 1 0},
->     {0 0 0}}
-> Output:
->    {{0 0 0},
->     {0 1 0},
->     {0 0 0}}
+>0 0 0
+>0 1 0
+>1 1 1
+>Output:
+>0 0 0
+>0 1 0
+>1 2 1}
+#### How to use IDEAL & Duke's
+I would lean more on IDEAL for this question to figure out what the output is.  I would like to "Define the goal" to figure out what "the distance between two adjacent cells."  I would assume the goal is to have an integer 2D array.  And a cell is the origin and do a breadth first search for a zero.  I would then use Duke's approach to try out an experiment for this hypothesis.
+#### Clarifying questions:
+* Can distance be diagonal, or only left and right?
+* Is the matrix a jagged array or an NxN?
+* What number would a '0' matrix-cell
+#### Probing questions:
+* What if there were no zeroes in the input array?
+* Could we modularize and use a helper method?
 
 ### Q456. 132 Pattern
 url: https://leetcode.com/problems/132-pattern/
@@ -54,15 +62,11 @@ url: https://leetcode.com/problems/132-pattern/
 >
 >Explanation: There is no 132 pattern in the sequence.
 #### How to use IDEAL & Duke's
-In the "Identify the problem" of IDEAL I would wannt to rephrase the question in plain english. So that I know what examples and what steps to take in Duke's approach.
+
 #### Clarifying questions:
-* I would want to first clearly define what is meant by "i", "j", "k" verses "ai", "aj", "ak"
-* When we say "list" are we talking about a linked list?
-* Is the linked list, singly- or doubly-linked?
+* 
 #### Probing questions:
-* What if we're given a sequence that is less than three integers?
-* Would there be a situation of having negative numbers in the list?
-* Why do they explicitly make a point of saying "n will be less than 15,000?
+* 
 
 ### Q650. 2 Keys Keyboard
 url: https://leetcode.com/problems/2-keys-keyboard/
@@ -84,6 +88,12 @@ number of steps to get n 'A'.
 >
 >Note:
 >The n will be in the range [1, 1000].
+#### How to use IDEAL & Duke's
+I would use the "Identify the problem" part of IDEAL to under the problem-space. I mean I would figure out how to get to a wierd number, like a prime number.
+#### Clarifying questions:
+* Is the delete key present? I'm assuming it would have to be after "Identifying the problem" and "Defining the goal."
+#### Probing questions:
+* If deleting is an option, is it counted as a step?
 
 ### Q15. 3Sum
 url: https://leetcode.com/problems/3sum/
@@ -102,6 +112,12 @@ url: https://leetcode.com/problems/3sum/
 >  [-1, 0, 1],
 >  [-1, -1, 2]
 >]
+#### How to use IDEAL & Duke's
+I would use the "Identify the problem" part of IDEAL to under the problem-space. I mean I would figure out how to get to a wierd number, like a prime number.
+#### Clarifying questions:
+* Is the delete key present? I'm assuming it would have to be after "Identifying the problem" and "Defining the goal."
+#### Probing questions:
+* If deleting is an option, is it counted as a step?
 
 ### Q721. Accounts Merge
 url: https://leetcode.com/problems/accounts-merge/
