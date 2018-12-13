@@ -62,11 +62,16 @@ url: https://leetcode.com/problems/132-pattern/
 >
 >Explanation: There is no 132 pattern in the sequence.
 #### How to use IDEAL & Duke's
-
+I would use the "Identify Problem" and "Define Goal" of Ideal to figure out the problem space.  What I mean is that I'm a little unclear about what exactly is the difference between i, j, k and ai, aj, ak.
 #### Clarifying questions:
-* 
+* Is the "sequence" of integers given as an array?
+* Will there be negative integers in the array?
+* Will the array length always be greater than or equal to three?
 #### Probing questions:
-* 
+* What is the difference between i and ai? Assuming that the relation will hold for the other variables.
+* Can you relate "132 pattern" to "ai < ak < aj"?
+* How should we handle a null array, an un-initialized array?
+* What happens with an array containing all equal numbers because the setup explicitly says " i < j < k" and "ai < ak < aj"
 
 ### Q650. 2 Keys Keyboard
 url: https://leetcode.com/problems/2-keys-keyboard/
@@ -113,11 +118,16 @@ url: https://leetcode.com/problems/3sum/
 >  [-1, -1, 2]
 >]
 #### How to use IDEAL & Duke's
-I would use the "Identify the problem" part of IDEAL to under the problem-space. I mean I would figure out how to get to a wierd number, like a prime number.
+I feel this problem is fairly straight forward. I would jump straight into the Duke's approach to work out examples by hand and start looking for patterns and come up with an algorithm.
 #### Clarifying questions:
-* Is the delete key present? I'm assuming it would have to be after "Identifying the problem" and "Defining the goal."
+* Are duplicate numbers allowed?
+* Are there limites to the number of duplicates in the array?
+* Should the result be returned as a 2D array?
+* Is it okay to assume the array length will always be greater than or eqaul to 3?
 #### Probing questions:
-* If deleting is an option, is it counted as a step?
+* How should the answer be returned? Because the question poses "are there three elements" and then later says, "find all unique triplets." 
+* What happens if three elements are not found that equal 0?  I'm asking what should be returned.
+* Define what "duplicate triplet" means in the Note given, it states, "The solution set must not contain duplicate triplets."  Does duplicate mean we're taking order of the numbers into account?
 
 ### Q721. Accounts Merge
 url: https://leetcode.com/problems/accounts-merge/
@@ -126,6 +136,12 @@ url: https://leetcode.com/problems/accounts-merge/
 >Now, we would like to merge these accounts. Two accounts definitely belong to the same person if there is some email that is common to both accounts. Note that even if two accounts have the same name, they may belong to different people as people could have the same name. A person can have any number of accounts initially, but all of their accounts definitely have the same name.
 >
 >After merging the accounts, return the accounts in the following format: the first element of each account is the name, and the rest of the elements are emails in sorted order. The accounts themselves can be returned in any order.
+#### How to use IDEAL & Duke's
+
+#### Clarifying questions:
+* 
+#### Probing questions:
+* 
 
 ### Q623. Add One Row to Tree
 url: https://leetcode.com/problems/add-one-row-to-tree/
